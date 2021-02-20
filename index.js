@@ -2,7 +2,6 @@ let trie;
 (async()=>{
     let response = await fetch("https://garyongguanjie.github.io/entrie/trie.json");
     trie = await response.json();
-    console.log("hello")
     console.log(trie);
 })();
 function entrie(trie,prefix,distance=2){
