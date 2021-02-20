@@ -11,7 +11,6 @@ function entrie(trie,prefix,distance=2){
                 nextPrefix = prefix+k;
                 dfs(trie[k],nextPrefix,arr,depth+1);
             }
-            
         }
     }
     let temp = trie;
