@@ -2,6 +2,8 @@ let trie;
 (async()=>{
     trie = await entrie.get();
     document.getElementById("waittext").innerHTML = "Type here";
+    let topElement = document.getElementById("words");
+    topElement.style.display = "block";
 })();
 function onclickhandler(e) {
     let prefix = e.value.toLowerCase();
