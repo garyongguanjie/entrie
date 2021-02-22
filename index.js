@@ -3,7 +3,7 @@ let trie;
     trie = await entrie.get();
 })();
 function onclickhandler(e) {
-    let prefix = e.value;
+    let prefix = e.value.toLowerCase();
     let topElement = document.getElementById("words");
     topElement.innerHTML = '';
     if(prefix==="")return;
