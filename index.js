@@ -1,6 +1,6 @@
 let trie;
 (async()=>{
-    let trie = entrie.get();
+    let trie = await entrie.get();
 })();
 function onclickhandler(e) {
     let prefix = e.value;
