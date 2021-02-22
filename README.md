@@ -22,5 +22,3 @@ let searchDistance = 4; // how many characters after prefix to search for
 let words = entrie.find(trie,"hello",searchDistance); // returns array of words from most frequently used to least frequently used with prefix and search distance
 </script>
 ```
-# TODO 
-Convert to javascript module
