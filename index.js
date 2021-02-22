@@ -2,7 +2,7 @@ let trie;
 (async()=>{
     trie = await entrie.get();
     document.getElementById("waittext").innerHTML = "Type here";
-    let topElement = document.getElementById("words");
+    let inputElement = document.getElementById("inputtext");
     topElement.style.display = "block";
 })();
 function onclickhandler(e) {
