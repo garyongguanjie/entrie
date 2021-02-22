@@ -3,6 +3,7 @@ const entrie = {
         let response = await fetch("https://garyongguanjie.github.io/entrie/trie.json");
         trie = await response.json();
         console.log(trie);
+        return trie;
     },
     find:function(trie,prefix,distance=2){
         function dfs(trie,prefix,arr,depth){
