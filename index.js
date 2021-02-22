@@ -3,7 +3,7 @@ let trie;
     trie = await entrie.get();
     document.getElementById("waittext").innerHTML = "Type here";
     let inputElement = document.getElementById("inputtext");
-    topElement.style.display = "block";
+    inputElement.style.display = "block";
 })();
 function onclickhandler(e) {
     let prefix = e.value.toLowerCase();
