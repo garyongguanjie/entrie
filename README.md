@@ -10,12 +10,17 @@ https://garyongguanjie.github.io/entrie/
 https://www.kaggle.com/rtatman/english-word-frequency
 
 # Usage
-```
-let response = await fetch("https://garyongguanjie.github.io/entrie/trie.json");
-trie = await response.json();
-let word = "test";
-let distance = 2;
-entrie(trie,word,distance);
+```js
+<script src="https://garyongguanjie.github.io/entrie/entrie.js"></script>
+<script>
+let trie;
+(async()=>{
+    trie = await entrie.get(); // downloads trie with frequency data build from kaggle dataset
+})();
+let prefix = "hello"
+let searchDistance = 4; // how many characters after prefix to search for
+let words = entrie.find(trie,"hello",searchDistance); // returns array of words from most frequently used to least frequently used with prefix and search distance
+</script>
 ```
 # TODO 
 Convert to javascript module
