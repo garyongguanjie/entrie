@@ -26,7 +26,7 @@ const entrie = {
                 temp = temp[c];
             }else{
                 console.log("Word does not exist");
-                break
+                return [];
             }
         }
         // get all possible words given prefix
