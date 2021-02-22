@@ -28,5 +28,3 @@ function entrie(trie,prefix,distance=2){
     arr.sort((a,b)=>b.freq-a.freq);
     return arr.map(x=>x.word)
 }
-
-export default entrie;
