@@ -1,6 +1,7 @@
 let trie;
 (async()=>{
     trie = await entrie.get();
+    document.getElementById("waittext").innerHTML = "Type here";
 })();
 function onclickhandler(e) {
     let prefix = e.value.toLowerCase();
